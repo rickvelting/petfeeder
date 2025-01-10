@@ -102,7 +102,7 @@ void setup() {
 
 void loop() {
   // Handle button press for taring the scale
-  if (button.getSingleDebouncedPress()) {
+  if (button.isPressed()) {
     Serial.print("tare...");
     scale.tare();
   }
